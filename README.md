@@ -14,7 +14,7 @@ ember install ember-prosemirror
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Uses prosemirror richtext editor
 
 
 Contributing
