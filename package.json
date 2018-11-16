@@ -20,7 +20,24 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0"
+    "crel": "^3.1.0",
+    "ember-auto-import": "^1.2.15",
+    "ember-cli-babel": "^6.6.0",
+    "ember-cli-cjs-transform": "^1.3.0",
+    "ember-cli-htmlbars": "^2.0.1",
+    "prosemirror-commands": "^1.0.7",
+    "prosemirror-dropcursor": "^1.1.1",
+    "prosemirror-example-setup": "^1.0.1",
+    "prosemirror-gapcursor": "^1.0.3",
+    "prosemirror-history": "^1.0.3",
+    "prosemirror-keymap": "^1.0.1",
+    "prosemirror-markdown": "^1.2.1",
+    "prosemirror-menu": "^1.0.5",
+    "prosemirror-model": "^1.6.3",
+    "prosemirror-schema-basic": "^1.0.0",
+    "prosemirror-schema-list": "^1.0.1",
+    "prosemirror-state": "^1.2.2",
+    "prosemirror-view": "^1.6.5"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -28,7 +45,6 @@
     "ember-cli": "~3.1.1",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",

@@ -1,5 +1,8 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-prosemirror'
+	name: 'ember-prosemirror',
+	isDevelopingAddon() {
+		return true;
+	}
 };
