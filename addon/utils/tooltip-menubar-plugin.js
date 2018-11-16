@@ -9,9 +9,8 @@ export class ToolTipMenuBarView {
 		this.tooltip = crel('div', {
 			class: 'ember-prosemirror-tooltip'
 		});
-		this.tooltip.className = "ember-prosemirror-tooltip toolcount";
+		this.tooltip.className = "ember-prosemirror-tooltip toolTipMenu";
 
-		// document.querySelector('#modal-container').appendChild(this.tooltip);
 		editorView.dom.parentNode.appendChild(this.tooltip)
 
 		this.editorView = editorView;
@@ -20,7 +19,7 @@ export class ToolTipMenuBarView {
 			this.tooltip.style.display = "none";
 		});
 
-		this.editorView.dom.className = 'border-1 rounded-lg px-10 border-gray-00 hover:border-dark-blue-20 focus:border-gray-50 py-6';
+		this.editorView.dom.className = options.contentClassNames;
 		this.options = options;
 
 		this.menu = this.tooltip.appendChild(crel("div", {class: prefix$2}));
@@ -69,7 +68,6 @@ export class ToolTipMenuBarView {
 		let left = Math.max((start.left + end.left) / 2, start.left + 3)
 		this.tooltip.style.left = (left - box.left) + "px"
 		this.tooltip.style.bottom = (box.bottom - start.top) + "px"
-
 	}
 
 	destroy() { this.tooltip.remove() }

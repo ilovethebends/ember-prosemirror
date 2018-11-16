@@ -13,6 +13,7 @@ export default Component.extend({
 	layout,
 	classNames: ['ember-prosemirror'],
 	content: '',
+	contentClassNames: '',
 	view: '',
 
 	focusOut() {
@@ -30,7 +31,8 @@ export default Component.extend({
 		let plugins = getDefaultPlugins(schema);
 		plugins.pushObject(placeholderPlugin('--'));
 		plugins.pushObject(tooltipMenuBarPlugin({
-				content: buildMenuItems(schema).fullMenu
+				content: buildMenuItems(schema).fullMenu,
+				contentClassNames: this.get('contentClassNames')
 		}));
 
 		let view = new EditorView(this.element, {

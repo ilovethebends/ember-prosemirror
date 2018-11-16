@@ -97,7 +97,7 @@ li.ProseMirror-selectednode:after {
 	background: $darkblue50;
 }
 
-.ProseMirror-toolcount .ProseMirror-menu {
+.ProseMirror-toolTipMenu .ProseMirror-menu {
 	width: -webkit-fit-content;
 	width: fit-content;
 	white-space: pre;
@@ -368,14 +368,7 @@ li.ProseMirror-selectednode:after {
 	margin: 0;
 }
 
-// .ProseMirror {
-// 	padding: 4px 8px 4px 14px;
-// 	outline: none;
-// }
-
-// .ProseMirror p { margin-bottom: 1em }
-
-.toolcount {
+.toolTipMenu {
 	position: absolute;
 	z-index: 999999;
 	background: $darkgray70;
@@ -385,7 +378,7 @@ li.ProseMirror-selectednode:after {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-.toolcount:before {
+.toolTipMenu:before {
 	content: "";
 	height: 0; width: 0;
 	position: absolute;
@@ -396,7 +389,7 @@ li.ProseMirror-selectednode:after {
 	border-bottom-width: 0;
 	border-top-color: silver;
 }
-.toolcount:after {
+.toolTipMenu:after {
 	content: "";
 	height: 0; width: 0;
 	position: absolute;
